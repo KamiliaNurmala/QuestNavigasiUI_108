@@ -41,7 +41,7 @@ fun FormIsian(
                 singleLine = true,
                 modifier = Modifier
                     .padding(top = 20.dp)
-                    .width(width = 20.dp),
+                    .width(20.dp),
                 label = {Text(text = "Nama Lengkap",
                     onValueChange = {},
                 )
@@ -56,9 +56,13 @@ fun FormIsian(
                                     selected = false,
                                     onClick = {item}
                                 )
+                                Text(text = item)
                             }
                         }
                     }
+                    HorizontalDivider(modifier = Modifier
+                        .padding(20.dp)
+                        .width(250.dp),
                 }
             )
         }
