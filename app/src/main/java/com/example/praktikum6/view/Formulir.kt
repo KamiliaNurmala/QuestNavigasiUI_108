@@ -1,5 +1,7 @@
 package com.example.praktikum6.view
 
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.Composable
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.TopAppBar
@@ -16,7 +18,7 @@ fun FormIsian(
     OnSubmitBtnClick : () -> Unit
 ){
     Scaffold(modifier=Modifier,
-        = {
+        topBar = {
             TopAppBar(
                 title = {
                     Text(
@@ -25,8 +27,9 @@ fun FormIsian(
                     )
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = colorResource(id = R.color.teal_700)
-                )
+                    containerColor = colorResource(id = R.color.teal_700))
             )
-    })
+    }
+    )
+    }
 }
