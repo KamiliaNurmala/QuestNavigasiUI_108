@@ -30,6 +30,12 @@ fun FormIsian(
                     containerColor = colorResource(id = R.color.teal_700))
             )
     }
-    )
+    ){IsiRuang ->
+        Column(modifier = Modifier.padding(isiRuang),
+            verticalArragement = Arrangement.Top,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            OutlinedTextField()
+        }
     }
 }
