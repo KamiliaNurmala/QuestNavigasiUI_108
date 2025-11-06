@@ -1,6 +1,7 @@
 package com.example.praktikum6.view
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.Composable
 import androidx.compose.material3.Scaffold
@@ -18,14 +19,13 @@ fun FormIsian(
     OnSubmitBtnClick : () -> Unit
 ){
     Scaffold(modifier=Modifier,
-        topBar = {
+        {
             TopAppBar(
                 title = {
                     Text(
                         text = stringResource(id = R.string.home),
                         color = Color.White
-                    )
-                },
+                    )},
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = colorResource(id = R.color.teal_700))
             )
@@ -35,7 +35,11 @@ fun FormIsian(
             verticalArragement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            OutlinedTextField()
+            OutlinedTextField(
+                value = "",
+                singleLine = true,
+
+            )
         }
     }
 }
