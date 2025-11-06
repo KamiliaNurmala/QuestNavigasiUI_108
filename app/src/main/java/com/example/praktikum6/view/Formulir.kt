@@ -15,7 +15,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.graphics.Color
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.unit.dp
+import androidx.compose.material3.Button
+import androidx.compose.material3.DividerDefaults.Thickness
+import com.example.praktikum6.R
+import androidx.compose.material3.ExperimentalMaterial3Api
 
+
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormIsian(
     jenisK:List<String> = listOf("Laki-laki", "Perempuan"),
@@ -36,7 +49,7 @@ fun FormIsian(
                 )
             )
         }
-    ) { IsiRuang ->
+    ) { isiRuang ->
         Column(
             modifier = Modifier.padding(isiRuang),
             verticalArrangement = Arrangement.Top,
@@ -95,7 +108,7 @@ fun FormIsian(
 
             Button(
                 modifier = Modifier.fillMaxWidth(1f),
-                onCluck = OnSubmitBtnClick
+                onClick = OnSubmitBtnClick
             ) {
                 Text(stringResource(id = R.string.submit))
             }
