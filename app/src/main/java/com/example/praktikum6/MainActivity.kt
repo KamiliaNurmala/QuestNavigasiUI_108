@@ -1,5 +1,6 @@
 package com.example.praktikum6
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -14,7 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.praktikum6.ui.theme.Praktikum6Theme
 
 class MainActivity : ComponentActivity() {
-    @SupressLint("UnusedMaterial3ScaffoldPaddingParameter")
+    @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
