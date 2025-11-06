@@ -1,6 +1,7 @@
 package com.example.praktikum6.view
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.OutlinedTextField
@@ -76,6 +77,12 @@ fun FormIsian(
                         onValueChange = {},
                     )
                     Spacer(modifier = Modifier.height(30.dp))
+                    Button(
+                        modifier = Modifier.fillMaxWidth(1f),
+                            onCluck = OnSubmitBtnClick
+                    ){
+                            Text(stringResource(id = R.string.submit))
+                    }
                 }
             )
         }
