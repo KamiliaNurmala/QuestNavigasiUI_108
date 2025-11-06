@@ -3,6 +3,7 @@ package com.example.praktikum6.view
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.RadioButton
 import androidx.compose.runtime.Composable
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.TopAppBar
@@ -38,7 +39,14 @@ fun FormIsian(
             OutlinedTextField(
                 value = "",
                 singleLine = true,
+                modifier = Modifier
+                    .padding(top = 20.dp)
+                    .width(width = 20.dp),
+                label = {Text(text = "Nama Lengkap",
+                    onValueChange = {},
+                )
 
+                }
             )
         }
     }
